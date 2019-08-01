@@ -1,0 +1,109 @@
+:root {
+  /* Typography
+
+  // ========================================== */
+  --font-family: 'Merriweather', serif;
+  --font-weight: 400;
+  --font-weight-bold: 700;
+  --font-weight-black: 900;
+
+  /* set base values */
+  --text-base-size: 1rem;
+  --text-scale-ratio: 1.125; /* major second */
+  --line-height-text: 1.5;
+  --line-height-heading: 1.25;
+
+  /* Type scale */
+  /* Very large sizes */
+
+  --font-size-xxxx-display: 3.653rem;
+  --font-size-xxx-display: 3.247rem;
+  --font-size-xx-display: 2.887rem;
+  --font-size-x-display: 2.566rem;
+  --font-size-display: 2.281rem;
+
+  /* Large sizes */
+  --font-size-xxxx-large: 2.027rem;
+  --font-size-xxx-large: 1.802rem;
+  --font-size-xx-large: 1.602rem;
+  --font-size-x-large: 1.424rem;
+  --font-size-large: 1.266rem;
+
+  /* Regular sizes */
+  --font-size-medium: 1.125rem;
+  --font-size: 1rem;
+
+  /* Small sizes */
+  --font-size-small: 0.889rem;
+  --font-size-x-small: 0.79rem;
+
+  /* Color SM Mountains */
+  --color-silk: #c1b3a7;
+  --color-zorba: #a89d91;
+  --color-saddle: #5f4d47;
+  --color-celery: #b6cb5e;
+  --color-dell: #496538;
+  --color-muddy-waters: #ad7a52;
+  --color-fawn: #e1ac6e;
+  --color-sandrift: #ab8979;
+  --color-celestial-blue: #4591de;
+  --color-maya-blue: #6dbef7;
+  --color-picton-blue: #5aa7de;
+  --color-waikawa-gray: #65748e;
+  --color-perfume: #beabdd;
+  --color-hippie-pink: #a94358;
+  --color-lavender-pink: #fdb2cd;
+  --color-azalea: #fbc0c1;
+
+  /* Border radii
+ // ========================================== */
+
+  --border-radius-x-small: 0.25rem;
+  --border-radius-small: 0.5rem;
+  --border-radius-medium: 0.75rem;
+  --border-radius-large: 1rem;
+  --border-radius-circle: 50%;
+
+  /* Border widths
+// ========================================== */
+
+  --border-width-hairline: 1px;
+  --border-width-thin: 2px;
+  --border-width-thick: 5px;
+
+  /* Spacing
+// ========================================== */
+
+  --spacing-xx-small: 0.125rem;
+  --spacing-x-small: 0.25rem;
+  --spacing-small: 0.5rem;
+  --spacing: 0.75rem;
+  --spacing-medium: 1rem;
+  --spacing-large: 1.5rem;
+  --spacing-x-large: 2rem;
+  --spacing-xx-large: 3rem;
+
+
+  /* Breakpoints relative to 16px base font
+// ========================================== */
+
+  --bp-x-small: 18.75em; /*300px */
+  --bp-small: 30em; /*//480px */
+  --bp-medium: 48em; /*// 768px; */
+  --bp-large: 64em; /*// 1024px */
+  --bp-x-large: 75em; /*// 1200px; */
+  --bp-xx-large: 87.5rem; /*//1400px; */
+
+
+  --min-width: var(--bp-medium);
+  --max-width: var(--bp-x-large);
+  
+
+  /* Compound Grids
+// ========================================== */
+
+  --compound-grid-two-plus-three: 2fr 1fr 1fr 2fr;
+  --compound-grid-three-plus-four: 3fr 1fr 2fr 2fr 1fr 3fr;
+  --compound-grid-four-plus-five: 6fr 1fr 4fr 3fr 3fr 4fr 1fr 6fr;
+  --compound-grid-malarkey: 2fr 1fr 1fr 2fr 2fr 1fr 1fr 2fr;
+}

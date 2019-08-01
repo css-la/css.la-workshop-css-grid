@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Sample A: grid column and grid rows | CSS.la</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style type="text/css">
+      /* GRID PLAYGROUND STARTS HERE 
+      
+      
+      */
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 1em;
+        grid-auto-rows: auto;
+      }
+
+      .grid > div {
+        font-family: sans-serif;
+        font-size: 1.2rem;
+        font-weight: 700;
+        padding: 1em;
+      }
+
+      .primary {
+        background-color: #95d2bd;
+        grid-column: 1 / 5;
+        grid-row: 1/ 2;
+        z-index: 2;
+      }
+
+      .primary-light {
+        background-color: #b9e1d3;
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+      }
+
+      .primary-lighter {
+        background-color: #ddf0ea;
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+      }
+
+      .primary-dark {
+        background-color: #71c3a7;
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+      }
+
+      .primary-darker {
+        background-color: #4db490;
+        grid-column: 4 / 5;
+        grid-row: 2 / 3;
+      }
+
+      .supporting {
+        background-color: #7b5b73;
+        grid-column: 3 / 5;
+        grid-row: 3 / 5;
+      }
+
+      .supporting-light {
+        background-color: #97728e;
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+      }
+
+      .supporting-lighter {
+        background-color: #ad8fa5;
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
+      }
+
+      .supporting-dark {
+        background-color: #5e4558;
+        color: #eaf1ee;
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+      }
+
+      .supporting-darker {
+        background-color: #40303c;
+        color: #eaf1ee;
+        grid-column: 2;
+        grid-row: 4;
+      }
+
+      .accent {
+        background-color: #f8da88;
+        grid-column: 1 / 3;
+        grid-row: 5 / 7;
+      }
+
+      .accent-light {
+        background-color: #fbe9b8;
+        grid-column: 3;
+        grid-row: 5;
+      }
+
+      .accent-lighter {
+        background-color: #fef8e8;
+        grid-column: 4;
+        grid-row: 5;
+      }
+
+      .accent-dark {
+        background-color: #f5cb58;
+        grid-column: 3;
+        grid-row: 6;
+      }
+
+      .accent-darker {
+        background-color: #f2bc28;
+        grid-column: 4;
+        grid-row: 6;
+      }
+
+      .base {
+        background-color: #918177;
+        grid-column: 3 / 5;
+        grid-row: 7 / 9;
+      }
+
+      .base-light {
+        background-color: #a89b93;
+        grid-column: 1;
+        grid-row: 7;
+      }
+
+      .base-lighter {
+        background-color: #bfb5af;
+        grid-column: 2;
+        grid-row: 7;
+      }
+
+      .base-dark {
+        background-color: #76685f;
+        grid-column: 1;
+        grid-row: 8;
+      }
+
+      .base-darker {
+        background-color: #5a4f48;
+        color: #eaf1ee;
+        grid-column: 2;
+        grid-row: 8;
+      }
+
+      .text {
+        background-color: #232b2b;
+        color: whitesmoke;
+        grid-column: 1;
+        grid-row: 9;
+      }
+
+      .text-alt {
+        background-color: #eaf1ee;
+        color: #232b2b;
+        grid-column: 2;
+        grid-row: 9;
+      }
+
+      .text-inverse {
+        background-color: whitesmoke;
+        color: #232b2b;
+        grid-column: 3;
+        grid-row: 9;
+      }
+
+      .text-inverse-alt {
+        background-color: #232b2b;
+        color: whitesmoke;
+        grid-column: 4;
+        grid-row: 9;
+      }
+
+      .positive {
+        background-color: forestgreen;
+        grid-column: 1/3;
+        grid-row: 10;
+      }
+
+      .negative {
+        background-color: #eb7e7f;
+        grid-column: 3/5;
+        grid-row: 10;
+      }
+
+
+    </style>
+  </head>
+
+  <body>
+    <div class="grid">
+      <div class="primary">primary</div>
+      <div class="primary-light">primary-light</div>
+      <div class="primary-lighter">primary-lighter</div>
+      <div class="primary-dark">primary-dark</div>
+      <div class="primary-darker">primary-darker</div>
+      <div class="supporting">supporting</div>
+      <div class="supporting-light">supporting-light</div>
+      <div class="supporting-lighter">supporting-lighter</div>
+      <div class="supporting-dark">supporting-dark</div>
+      <div class="supporting-darker">supporting-darker</div>
+      <div class="accent">accent</div>
+      <div class="accent-light">accent-light</div>
+      <div class="accent-lighter">accent-lighter</div>
+      <div class="accent-dark">accent-dark</div>
+      <div class="accent-darker">accent-darker</div>
+
+      <div class="base">base
+        <p>A neutral colour, used for for elements including borders, horizontal
+          rules, table headers and quotation marks.</p>
+      </div>
+      <div class="base-light">base-light</div>
+      <div class="base-lighter">base-lighter</div>
+      <div class="base-dark">base-dark</div>
+      <div class="base-darker">base-darker</div>
+
+
+      <div class="text">color-text</div>
+      <div class="text-alt">color-text-alt</div>
+      <div class="text-inverse">color-text-inverse</div>
+      <div class="text-inverse-alt">color-text-inverse-alt</div>
+
+
+      <div class="positive">color-posititve</div>
+      <div class="negative">color-negative</div>
+
+    </div>
+  </body>
+
+</html>

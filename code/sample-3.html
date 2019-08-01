@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Sample C: Align things in a Grid | CSS.la</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <style type="text/css">
+      /* GRID PLAYGROUND STARTS HERE 
+    # You can pick from seven values:
+
+    - start: flush grid to start of the axis
+    - end: flush grid to end of the axis
+    - center: align grid to center of the axis
+    - stretch: grid fills the axis (default value)
+    - space-between: spreads whitespace between grid items. No whitespace on at the ends
+    - space-around: spreads whitespace around each grid item
+    - space-evenly: spreads whitespace evenly around all grid items including the ends
+    
+    */
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 200px);
+        grid-template-areas:
+          "a a b b"
+          "a a b b"
+          "c d d d"
+          "e e e f";
+        grid-gap: 2vw;
+        align-items: end;
+        justify-items: end;
+        align-content: space-between;
+        justify-content: space-between;
+        margin: auto;
+        max-width: 80%;
+      }
+
+      .one {
+        grid-area: a;
+        align-self: stretch;
+        justify-self: stretch;
+      }
+
+      .two {
+        grid-area: b;
+        align-self: end;
+
+      }
+
+      .three {
+        grid-area: c;
+        align-self: start;
+        justify-self: start;
+      }
+
+      .four {
+        grid-area: d;
+        justify-self: stretch;
+      }
+
+      .five {
+        grid-area: e;
+        align-self: start;
+        justify-self: stretch;
+      }
+
+      .six {
+        grid-area: f;
+        justify-self: stretch;
+      }
+
+
+      /* BASE STYLES START HERE */
+      html {
+        box-sizing: border-box;
+      }
+
+      *,
+      *:before,
+      *:after {
+        box-sizing: inherit;
+      }
+
+      body {
+        font-family: Helvetica, sans-serif;
+        font-weight: 900;
+        font-size: 2rem;
+      }
+
+      li {
+        background-color: #98c87d;
+        color: #566199;
+        border-radius: 4px;
+        padding: 1em;
+        list-style: none;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    
+    <ul class="grid">
+      <li class="one">Item 1</li>
+      <li class="two">Item 2</li>
+      <li class="three">Item 3</li>
+      <li class="four">Item 4</li>
+      <li class="five">Item 5</li>
+      <li class="six">Item 6</li>
+    </ul>
+  </body>
+
+</html>

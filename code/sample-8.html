@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Disney Hall | 100 LA Layouts</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700,900"
+      rel="stylesheet">
+
+    <style type="text/css">
+      body {
+        display: grid;
+        grid-column-gap: 2vw;
+        grid-row-gap: 2vw;
+        grid-template-areas:
+          "header quote"
+          "image image"
+          "text text";
+        grid-template-columns: 1fr, 4fr;
+        margin: 1vh 4vw;
+      }
+
+      @media (min-width: 48em) {
+        body {
+          display: grid;
+          grid-column-gap: 0;
+          grid-row-gap: 2vw;
+          grid-template-areas:
+            "image image header"
+            "quote text text";
+          grid-template-columns: repeat(3, 1fr);
+          margin: 2vh 6vw;
+        }
+      }
+
+      header {
+        align-self: end;
+        grid-area: header;
+        padding-left: 1em;
+      }
+
+     h1 {
+        font-size: 1.424rem;
+        line-height: 1;
+        margin: 0;
+      }
+
+      @media (min-width: 48em) {
+        h1 {
+        font-size: 1.602rem;
+        }
+      }
+      
+      img {
+        grid-area: image;
+        object-fit: cover;
+        width: 100%;
+      }
+
+      blockquote {
+        grid-area: quote;
+        font-size: 80%;
+        margin: 1rem;
+      }
+
+      cite {
+        display: block;
+      }
+
+      article {
+        grid-area: text;
+        max-width: 70em;
+      }
+
+      article p:first-of-type::first-letter {
+        font-size: 200%;
+        line-height: 1;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <p><em>Design by Frank Gehry.</em></p>
+      <h1>Walt Disney Concert Hall</h1>
+    </header>
+
+    
+      <img class="horiz-disney" src="img/disney-hall.jpg" alt="" />
+      <blockquote>
+        <q>When the orchestra finally got to practice in Disney, it was to
+          rehearse Ravel's lusciously orchestrated ballet, Daphnis and Chloé.
+          This time, the hall miraculously came to life. A new
+          sonic dimension had been added, and every square inch of air in
+          Disney
+          vibrated merrily.</q>
+          <cite>–music critic</cite>
+      </blockquote>
+    
+
+    <article>
+
+      <p>As construction finished in the spring of 2003, the Philharmonic
+        postponed its grand opening until the fall and used the summer to let
+        the orchestra and Master Chorale adjust to the new hall. Performers and
+        critics agreed that it was well worth this extra time taken by the time
+        the hall opened to the public. During the summer rehearsals a few
+        hundred VIPs were invited to sit in including donors, board members and
+        journalists. Writing about these rehearsals, Los Angeles Times music
+        critic Mark Swed wrote the following account.</p>
+      <p>The walls and ceiling of the hall are finished with Douglas-fir
+        while the floor is finished with oak. Columbia Showcase & Cabinet Co.
+        Inc., based in Sun Valley, CA, produced all of the ceiling panels,
+        wall panels and architectural woodwork for the main auditorium and
+        lobbies. The Hall's reverberation time is approximately 2.2 seconds
+        unoccupied and 2.0 seconds occupied.</p>
+      <p>Toyota says that he had never experienced such an
+        acoustical difference between a first and second rehearsal in any of
+        the
+        halls he designed in his native Japan. Salonen could hardly believe his
+        ears. To his amazement, he discovered that there were wrong notes in
+        the
+        printed parts of the Ravel that sit on the players' stands. The
+        orchestra has owned these scores for decades, but in the Chandler no
+        conductor had ever heard the inner details well enough to notice the
+        errors.</p>
+
+
+    </article>
+
+  </body>
+
+</html>

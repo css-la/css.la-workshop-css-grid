@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>100 LA Layouts</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i" rel="stylesheet"> 
+  <link rel="stylesheet" href="css/styles.css" />
+  <style type="text/css">
+    body {
+      background: #309ad3;
+      display: grid;
+      font-family: 'Noto Sans', sans-serif;
+
+      /* 100px 175px 25px 200px 20px 70px 350px 20px 100px; */
+      grid-template-columns: 9.4339622641509% 16.509433962264% 2.3584905660377% 18.867924528302% 1.8867924528302% 6.6037735849057% 33.018867924528% 1.8867924528302% 9.4339622641509%;
+      grid-template-rows: repeat(6, 1fr);
+      max-height: 100vh;
+      transform: rotate(45deg);
+    }
+
+    [class^="purple"] {
+      background: #34478c;
+      height: 100%;
+      width: 100%;
+    }
+
+    [class^="green"] {
+      background: #34854b;
+      height: 100%;
+      opacity: 0.8;
+      width: 100%;
+      z-index: 1;
+    }
+
+    .green-left {
+      grid-column: 2 / 3;
+      grid-row: 2 / 4;
+    }
+
+    .green-center {
+      grid-column: 4 / 5;
+      grid-row: 2 / 4;
+    }
+
+    .green-right {
+      grid-column: 6 / 8;
+      grid-row: 2 / 4;
+      width: 50%;
+    }
+
+    .purple-left {
+      grid-column: 2 / 5;
+      grid-row: 3 / 6;
+    }
+
+    .purple-center {
+      grid-column: 6 / 8;
+      grid-row: 3 / 6;
+    }
+
+    .purple-right {
+      grid-column: 9 / 11;
+      grid-row: 3 / 6;
+    }
+
+    .text-left {
+      align-content: start;
+      grid-column: 4 / 5;
+      grid-row: 6 / 7;
+      justify-self: end;
+    }
+
+    .text-right {
+      grid-column: 6 / 8;
+      grid-row: 6 / 7;
+    }
+
+    p {
+      font-size: var(--font-size-x-large);
+      font-weight: 700;
+      margin: 0;
+      padding: 0;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="green-left"></div>
+  <div class="green-center"></div>
+  <div class="green-right"></div>
+  <div class="purple-left"></div>
+  <div class="purple-center"></div>
+  <div class="purple-right"></div>
+  <div class="text-left">
+    <p>végh-quartet</p>
+    <p>paul hindernith</p>
+    <p>alban berg</p>
+    <p>béla bartók</p>
+  </div>
+  <div class="text-right">
+    <p>musica viva</p>
+    <small>back in the 1960s pioneering achievements of this kind formed the basis for the international success of swiss graphics. with founding fathers such as josef müller-brockmann, karl gerstner or armin hofmann, reduced design under the name “swiss style” developed into a movement that pointed the way to the future. designers like massimo vignelli or wim crouwel established the minimalist aesthetic worldwide. the exhibition traces the successful spread of “swiss style” and confirms its relevance with a selection of contemporary works, for instance with a critical intervention of &quot;experimental jetset&quot;, an amsterdam-based trio of graphic designers.</small>
+  </div>
+</body>
+
+</html>

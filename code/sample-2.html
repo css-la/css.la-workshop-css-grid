@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Sample 2: Page Layout | CSS.la</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <style type="text/css">
+      /* GRID PLAYGROUND STARTS HERE */
+
+      .grid {
+        display: grid;
+        grid-gap: 1vw;
+        grid-template-areas:
+          "header"
+          "nav"
+          "article"
+          "aside"
+          "section"
+          "footer";
+      }
+
+      /* asign html to a grid area */
+      header {
+        grid-area: header;
+      }
+
+      nav {
+        grid-area: nav;
+      }
+
+      article {
+        grid-area: article;
+      }
+
+      aside {
+        grid-area: aside;
+      }
+
+      section {
+        grid-area: section;
+      }
+
+      footer {
+        grid-area: footer;
+      }
+
+      nav ul {
+        display: flex;
+        list-style: none;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      nav ul a {
+        text-decoration: none;
+        color: white;
+        padding: 0.25em;
+      }
+
+      nav ul a:hover {
+        background-color: #054a8c;
+      }
+
+      /* switch to 3 column grid */
+      @media (min-width: 600px) {
+        .grid {
+          grid-template-columns: 1fr 3fr 1fr;
+          grid-template-areas:
+            "header header header"
+            "nav nav nav"
+            "aside article section"
+            "footer footer footer";
+        }
+
+        nav ul {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-around;
+        }
+      }
+
+      /* BASIC SETUP BELOW */
+
+
+      .grid > * {
+        border-radius: 5px;
+        background-color: #054a8c;
+        padding: 1em 2em;
+        color: #fff;
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+
+      .grid > nav {
+        padding: 0;
+        background-color: #4a82ba;
+      }
+
+      .grid > article {
+        background-color: #4a82ba;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div class="grid">
+      <header>Header</header>
+      <nav>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">People</a></li>
+          <li><a href="">News</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </nav>
+      <article>
+        <h1>Article</h1>
+        <p>Content for my article would go here.</p>
+      </article>
+      <aside>Aside</aside>
+      <section>Section</section>
+      <footer>Footer</footer>
+
+    </div>
+  </body>
+
+</html>

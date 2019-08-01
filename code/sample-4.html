@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Sample 4: Color swatches with support queries for flexbox and grid | CSS.la</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no">
+    <style type="text/css">
+      body {
+        display: grid;
+        font-family: sans-serif;
+        font-size: 0.8rem;
+        line-height: 1.4;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      }
+
+      @supports (display: grid) {
+        .swatch {
+          display: grid;
+          grid-template-columns: 1fr 2fr; 
+          grid-gap: 1vw;
+          text-align: left;
+        } 
+      }
+
+      /* @supports (display: flex) {
+        .swatch {
+          display: flex;
+          flex-direction: column-reverse;
+          text-align: center;
+        } 
+      } */
+
+      .palette {
+        outline: 1px solid darkgray;
+      }
+
+      .swatch {
+        border-bottom: 1px solid silver;
+        padding: 1em 0;        
+      }
+
+      .color {
+        border-radius: 50%;
+        border: 5px solid silver;
+        height: 50px;
+        margin: 0.5em auto 0.5em 1em;;
+        width: 50px;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <section class="palette">
+      <div class="swatch">
+        <div class="color" style="background: #6f798a;"></div>
+        <div>
+          <strong>Hex:</strong> #6F798A<br>
+          <strong>HSL:</strong> 218, 11, 49<br>
+          <strong>RGB:</strong> 111 121 138 </div>
+      </div>
+      <div class="swatch">
+        <div class="color" style="background: #bfb063;"></div>
+        <div>
+          <strong>Hex:</strong> #BFB063<br>
+          <strong>HSL:</strong> 50, 42, 57<br>
+          <strong>RGB:</strong> 191 176 99 </div>
+      </div>
+      <div class="swatch">
+        <div class="color" style="background: #dad1cb;"></div>
+        <div><strong>Hex:</strong> #DAD1CB<br>
+          <strong>HSL:</strong> 24, 17, 83<br>
+          <strong>RGB:</strong> 218 209 203 </div>
+      </div>
+      <div class="swatch">
+        <div class="color" style="background: #454543;"></div>
+        <div><strong>Hex:</strong> #454543<br>
+          <strong>HSL:</strong> 60, 1, 27<br>
+          <strong>RGB:</strong> 69 69 67 </div>
+      </div>
+      <div class="swatch">
+        <div class="color" style="background: #a68c76;"></div>
+        <div><strong>Hex:</strong> #A68C76<br>
+          <strong>HSL:</strong> 28, 21, 56<br>
+          <strong>RGB:</strong> 166 140 118 </div>
+      </div>
+      <div class="swatch">
+        <div class="color" style="background: #95561f;"></div>
+        <div><strong>Hex:</strong> #95561F<br>
+          <strong>HSL:</strong> 28, 66, 35<br>
+          <strong>RGB:</strong> 149 86 31</div>
+      </div>
+    </section>
+    <section class="palette">
+      <div class="swatch">
+        <div class="color" style="background: #595736;"></div>
+        <div>
+          <strong>Hex:</strong> #595736<br>
+          <strong>HSL:</strong> 57, 24, 28<br>
+          <strong>RGB:</strong> 89 87 54</div>
+      </div>
+      <div class="swatch">
+        <div class="color" style="background: #d9c3a9;"></div>
+        <div>
+          <strong>Hex:</strong> #D9C3A9<br>
+          <strong>HSL:</strong> 33, 39, 76<br>
+          <strong>RGB:</strong> 217 195 169 </div>
+      </div>
+      <div class="swatch">
+        <div class="color" style="background: #f0e7d8;"></div>
+        <div>
+          <strong>Hex:</strong> #F0E7D8<br>
+          <strong>HSL:</strong> 38, 44, 89<br>
+          <strong>RGB:</strong> 240 231 216</div>
+      </div>
+      <div class="swatch">
+        <div class="color" style="background: #bfab99;"></div>
+        <div>
+          <strong>Hex:</strong> #BFAB99<br>
+          <strong>HSL:</strong> 28, 23, 67<br>
+          <strong>RGB:</strong> 191 171 153</div>
+      </div>
+      <div class="swatch">
+        <div class="color" style="background: #8c7c6d;"></div>
+        <div>
+          <strong>Hex:</strong> #8C7C6D<br>
+          <strong>HSL:</strong> 29, 12, 49<br>
+          <strong>RGB:</strong> 140 124 109</div>
+      </div>
+    </section>
+    <section class="palette">
+      <div class="swatch">
+        <div class="color" style="background: #4f643d;"></div>
+        <div>
+          <strong>Hex:</strong> #4F643D<br>
+          <strong>HSL:</strong> 92, 24, 32<br>
+          <strong>RGB:</strong> 79 100 61</div>
+      </div>
+      <div class="swatch">
+        <div class="color" style="background: #bac96d;"></div>
+        <div>
+          <strong>Hex:</strong> #BAC96D<br>
+          <strong>HSL:</strong> 70, 46, 61<br>
+          <strong>RGB:</strong> 186 201 109 </div>
+      </div>
+      <div class="swatch">
+        <div class="color" style="background: #5c4e48;"></div>
+        <div>
+          <strong>Hex:</strong> #5C4E48<br>
+          <strong>HSL:</strong> 18, 12, 32<br>
+          <strong>RGB:</strong> 92 78 72</div>
+      </div>
+      <div class="swatch">
+        <div class="color" style="background: #a69d92;"></div>
+        <div>
+          <strong>Hex:</strong> #A69D92<br>
+          <strong>HSL:</strong> 33, 10, 61<br>
+          <strong>RGB:</strong> 166 157 146</div>
+      </div>
+      <div class="swatch">
+        <div class="color" style="background: #bfb3a8;"></div>
+        <div>
+          <strong>Hex:</strong> #BFB3A8<br>
+          <strong>HSL:</strong> 29, 15, 70<br>
+          <strong>RGB:</strong> 191 179 168</div>
+      </div>
+    </section>
+    <section class="palette">
+      <div class="swatch">
+        <div class="color" style="background: #5891d8;"></div>
+        <div>
+          <strong>Hex:</strong> #5891D8<br>
+          <strong>HSL:</strong> 213, 62, 60<br>
+          <strong>RGB:</strong> 88 145 216</div>
+      </div>
+      <div class="swatch">
+        <div class="color" style="background: #4b89bf;"></div>
+        <div>
+          <strong>Hex:</strong> #4B89BF<br>
+          <strong>HSL:</strong> 208, 48, 52<br>
+          <strong>RGB:</strong> 75 137 191 </div>
+      </div>
+      <div class="swatch">
+        <div class="color" style="background: #79baf2;"></div>
+        <div>
+          <strong>Hex:</strong> #79BAF2<br>
+          <strong>HSL:</strong> 208, 82, 71<br>
+          <strong>RGB:</strong> 121 186 242</div>
+      </div>
+      <div class="swatch">
+        <div class="color" style="background: #d9ad77;"></div>
+        <div>
+          <strong>Hex:</strong> #D9AD77<br>
+          <strong>HSL:</strong> 33, 56, 66<br>
+          <strong>RGB:</strong> 217 173 119</div>
+      </div>
+      <div class="swatch">
+        <div class="color" style="background: #a67c58;"></div>
+        <div>
+          <strong>Hex:</strong> #A67C58<br>
+          <strong>HSL:</strong> 28, 31, 50<br>
+          <strong>RGB:</strong> 166 124 88</div>
+      </div>
+    </section>
+    <section class="palette">
+      <div class="swatch">
+        <div class="color" style="background: #68748c;"></div>
+        <div>
+          <strong>Hex:</strong> #68748C<br>
+          <strong>HSL:</strong> 220, 15, 48<br>
+          <strong>RGB:</strong> 104 116 140</div>
+      </div>
+      <div class="swatch">
+        <div class="color" style="background: #6ca6d9;"></div>
+        <div>
+          <strong>Hex:</strong> #6CA6D9<br>
+          <strong>HSL:</strong> 208, 59, 64<br>
+          <strong>RGB:</strong> 108 166 217</div>
+      </div>
+      <div class="swatch">
+        <div class="color" style="background: #80bdf2;"></div>
+        <div>
+          <strong>Hex:</strong> #80BDF2<br>
+          <strong>HSL:</strong> 208, 81, 73<br>
+          <strong>RGB:</strong> 128 189 242</div>
+      </div>
+      <div class="swatch">
+        <div class="color" style="background: #a7d5f2;"></div>
+        <div>
+          <strong>Hex:</strong> #A7D5F2<br>
+          <strong>HSL:</strong> 203, 74, 80<br>
+          <strong>RGB:</strong> 167 213 242</div>
+      </div>
+      <div class="swatch">
+        <div class="color" style="background: #a68a7b;"></div>
+        <div>
+          <strong>Hex:</strong> #A68A7B<br>
+          <strong>HSL:</strong> 21, 19, 57<br>
+          <strong>RGB:</strong> 166 138 123</div>
+      </div>
+    </section>
+    <section class="palette">
+      <div class="swatch">
+        <div class="color" style="background: #f2c2c2;"></div>
+        <div>
+          <strong>Hex:</strong> #F2C2C2<br>
+          <strong>HSL:</strong> 0, 65, 85<br>
+          <strong>RGB:</strong> 242 194 194</div>
+      </div>
+      <div class="swatch">
+        <div class="color" style="background: #f2b6cc;"></div>
+        <div>
+          <strong>Hex:</strong> #F2B6CC<br>
+          <strong>HSL:</strong> 338, 70, 83<br>
+          <strong>RGB:</strong> 242 182 204</div>
+      </div>
+      <div class="swatch">
+        <div class="color" style="background: #bbadd9;"></div>
+        <div>
+          <strong>Hex:</strong> #BBADD9<br>
+          <strong>HSL:</strong> 259, 37, 76<br>
+          <strong>RGB:</strong> 187 173 217</div>
+      </div>
+      <div class="swatch">
+        <div class="color" style="background: #f2d8ce;"></div>
+        <div>
+          <strong>Hex:</strong> #F2D8CE<br>
+          <strong>HSL:</strong> 17, 58, 88<br>
+          <strong>RGB:</strong> 242 216 206</div>
+      </div>
+      <div class="swatch">
+        <div class="color" style="background: #8c7570;"></div>
+        <div>
+          <strong>Hex:</strong> #8C7570<br>
+          <strong>HSL:</strong> 11, 11, 49<br>
+          <strong>RGB:</strong> 140 117 112</div>
+      </div>
+    </section>
+    <section class="palette">
+      <div class="swatch">
+        <div class="color" style="background: #5f6a3d;"></div>
+        <div>
+          <strong>Hex:</strong> #5F6A3D<br>
+          <strong>HSL:</strong> 75, 27, 33<br>
+          <strong>RGB:</strong> 95 106 61</div>
+      </div>
+      <div class="swatch">
+        <div class="color" style="background: #80823f;"></div>
+        <div>
+          <strong>Hex:</strong> #80823F<br>
+          <strong>HSL:</strong> 62, 35, 38<br>
+          <strong>RGB:</strong> 128 130 63</div>
+      </div>
+      <div class="swatch">
+        <div class="color" style="background: #f6d763;"></div>
+        <div>
+          <strong>Hex:</strong> #F6D763<br>
+          <strong>HSL:</strong> 47, 89, 68<br>
+          <strong>RGB:</strong> 246 215 99</div>
+      </div>
+      <div class="swatch">
+        <div class="color" style="background: #e6c859;"></div>
+        <div>
+          <strong>Hex:</strong> #E6C859<br>
+          <strong>HSL:</strong> 47, 74, 63<br>
+          <strong>RGB:</strong> 230 200 89</div>
+      </div>
+      <div class="swatch">
+        <div class="color" style="background: #9d4a59;"></div>
+        <div>
+          <strong>Hex:</strong> #9D4A59<br>
+          <strong>HSL:</strong> 349, 36, 45<br>
+          <strong>RGB:</strong> 157 74 89</div>
+      </div>
+    </section>
+  </body>
+
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Holiday Ice Rink Downtown Los Angeles | CSS.la</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400i"
+      rel="stylesheet" />
+
+    <style type="text/css">
+      /* minor third */
+      :root {
+        --font-size-xxx-large: 3.583rem;
+        --font-size-xx-large: 2.488rem;
+        --font-size-x-large: 2.074rem;
+        --font-size-large: 1.728rem;
+        --font-size-medium: 1.2rem;
+        --font-size: 1rem;
+        --font-size-small: 0.833rem;
+      }
+
+      body {
+        display: grid;
+        font-family: "Noto Serif", serif;
+        grid-template-areas:
+          "quote"
+          "zamboni"
+          "article"
+          "footer";
+        height: 100vh;
+      }
+
+
+      header {
+        grid-area: header;
+      }
+
+
+      figure {
+        grid-area: zamboni;
+        margin: 0;
+        object-fit: cover;
+        width: 100%;
+      }
+
+
+      figcaption {
+        font-size: var(--font-size-small);
+      }
+
+
+      img {
+        border: 5px solid #002966;
+      }
+
+
+      article {
+        align-self: center;
+        grid-area: article;
+      }
+
+
+      aside {
+        align-self: center;
+        color: #002966;
+        font-size: var(--font-size-medium);
+        font-style: italic;
+        grid-area: quote;
+        line-height: 1.2;
+        margin-bottom: 1em;
+      }
+
+
+      footer {
+        grid-area: footer;
+      }
+
+      article h1 {
+        font-family: impact, sans-serif;
+        font-size: var(--font-size-xx-large);
+        line-height: 1.1;
+        text-transform: uppercase;
+      }
+
+      .standfirst {
+        font-size: var(--font-size-medium);
+        font-style: italic;
+        line-height: 1.2;
+      }
+
+      @media (min-width: 30em) {
+
+        body {
+          grid-gap: 2vw;
+          grid-template-areas:
+            ". zamboni"
+            "quote zamboni"
+            ". article"
+            ". footer";
+          grid-template-columns: 2fr 3fr;
+        }
+
+
+        aside {
+          font-size: var(--font-size-large);
+          text-align: right;
+        }
+
+        article h1 {
+          font-size: var(--font-size-xxx-large);
+          margin: 0;
+        }
+
+        .standfirst {
+          font-size: var(--font-size-large);
+        }
+      }
+
+      @media (min-width: 62em) {
+
+        body {
+          grid-gap: 2vw;
+          grid-template-areas:
+            ". zamboni . ."
+            "quote zamboni article ."
+            ". zamboni footer .";
+          grid-template-columns: 2fr 3fr 2fr 1fr;
+        }
+
+
+        aside {
+          font-size: var(--font-size-large);
+          text-align: right;
+        }
+
+        article h1 {
+          font-size: var(--font-size-xxx-large);
+          margin: 0;
+        }
+
+        article h1 span {
+          display: block;
+        }
+
+        .standfirst {
+          font-size: var(--font-size-large);
+        }
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <figure class="zamboni">
+      <img sizes="(min-width: 30em) 50vw, 100vw" srcset="
+          img/zamboni@square.jpg  300w,
+          img/zamboni@0.5x.jpg    800w,
+          img/zamboni@cool.jpg   1200w" src="img/zamboni@purple-wall.jpg"
+        alt="zamboni operator smiling" />
+      <figcaption>Holiday Ice Rink Downtown Los Angeles</figcaption>
+    </figure>
+
+    <article>
+      <header>
+        <h1>Perfect <span>on Ice</span></h1>
+      </header>
+      <p class="standfirst">
+        The first ice resurfacer was pioneered and developed in 1949 in the city
+        of Paramount, California by American inventor and engineer Frank
+        Zamboni.
+      </p>
+
+      <p>
+        An ice resurfacer is a vehicle or hand-pushed device used to clean and
+        smooth the surface of a sheet of ice, usually in an ice rink. The
+        Zamboni Company's ice resurfacing machine and Frank Zamboni were honored
+        with a Google Doodle on 16 January 2013, for Frank Zamboni's 112th
+        birthday. Google provided a playable doodle, where you can drive the
+        Zamboni machine around a rink. As such, an ice resurfacer is often
+        referred to as a "<a
+          href="https://en.wikipedia.org/wiki/Zamboni_Company">Zamboni</a>"
+        regardless of brand or manufacturer.
+      </p>
+    </article>
+    <aside>
+      <q>Super cute idea! Right in the center of downtown LA, this ice rink is
+        easily accessible and very family friendly.</q>
+    </aside>
+
+    <footer>
+      <small><a href="https://scottgruber.github.io/100-layouts/">from 100 LA
+          Layouts</a></small>
+    </footer>
+  </body>
+
+</html>
