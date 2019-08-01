@@ -1,4 +1,4 @@
-footer: [css.la](https://css.la) | @cssdotla
+footer: https://github.com/css-la/workshop-css-grid | @cssdotla
 
 ![100%](img/meetup-poster.png)
 
@@ -209,7 +209,7 @@ img {
 # [fit] What's next?
 --- 
 
-#[fit] https://www.css.la/
+#[fit] https://github.com/css-la/workshop-css-grid
 
 ---
 
